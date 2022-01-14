@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/rounded_corners_background"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/itemImage"
+        android:textSize="18sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_toStartOf="@+id/price"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="10dp"
+        android:text="itemName"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/itemImage"
+        android:layout_marginTop="10dp"
+        android:text="AED 200"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/itemName"
+        android:textSize="16sp"
+        android:text="item description"
+        android:maxLines="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/colourText"
+        android:layout_below="@+id/itemDescription"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Color : Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/stockText"
+        android:layout_below="@+id/colourText"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Inventory : 10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/checkoutButton"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/stockText"
+        android:layout_marginBottom="10dp"
+        android:text="Add To Cart"
+        android:background="@drawable/profile_edit_blue_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/similarItems"
+        android:layout_below="@+id/checkoutButton"
+        android:text="Similar Items"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/similarItemsRecyclerView"
+        android:layout_below="@+id/similarItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+</ScrollView>

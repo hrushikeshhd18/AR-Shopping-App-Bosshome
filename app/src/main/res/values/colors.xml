@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#516992</color>
+    <color name="colorPrimaryDark">#1b4653</color>
+    <color name="colorAccent">#39796b</color>
+
+    <color name="action_bar">#272a2a</color>
+    <color name="hb_delivery_blue">#34a2ff</color>
+    <color name="white">#ffffff</color>
+
+    <color name="light_grey">#e5e5e5</color>
+
+
+    <color name="approved">#bd8f3f</color>
+    <color name="completed">#54A483</color>
+    <color name="rejected_with_reason">#2d7d9a</color>
+
+    <color name="background_color">#f2f2f2</color>
+    <color name="message">#34d6ff</color>
+    <color name="add_cart">#46bd7b</color>
+    <color name="checkout">#46bd7b</color>
+    <color name="place_order">#46bd7b</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#ff000000</color>
+
+    //platllets updated
+<color name="colorPrimary1">#651FFF</color>
+<color name="colorPrimaryDark1">#6200EA</color>
+<color name="colorAccent1">#F50057</color>
+<color name="colorAccentPressed1">#890332</color>
+<color name="colorWhite1">#FFFFFF</color>
+</resources>

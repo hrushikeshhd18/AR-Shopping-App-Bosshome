@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:id="@+id/selectionButtonLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/categoryFilterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/centerCard"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp">
+
+            <RelativeLayout
+                android:id="@+id/categorySubLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_corners_background"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/amImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_category" />
+
+                <TextView
+                    android:id="@+id/categoryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/amImage"
+                    android:text="Category"
+                    android:textColor="@color/completed"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/centerCard"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/priceFilterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/centerCard"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp">
+
+            <RelativeLayout
+                android:id="@+id/priceSubLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_corners_background"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/pmImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_money" />
+
+                <TextView
+                    android:id="@+id/priceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/pmImage"
+                    android:text="Price"
+                    android:textColor="@color/completed"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/selectionButtonLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/filter_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/priceLowToHigh"
+            android:text="Price Low To High"
+            android:background="@drawable/rounded_corners_background"
+            android:layout_below="@+id/filter_recycler_view"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/priceHighToLow"
+            android:background="@drawable/rounded_corners_background"
+            android:layout_below="@+id/priceLowToHigh"
+            android:text="Price High To Low"
+            android:gravity="center"
+            android:layout_toStartOf="@+id/filterValue"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/resetFilter"
+            android:layout_below="@+id/priceHighToLow"
+            android:layout_marginTop="10dp"
+            android:text="Reset Filter"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/profile_edit_blue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

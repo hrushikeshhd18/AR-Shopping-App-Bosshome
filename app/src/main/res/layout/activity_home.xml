@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/colorPrimary1"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="139dp"
+            android:layout_marginLeft="139dp"
+            android:layout_marginTop="155dp"
+            android:background="@drawable/image_background"
+            android:padding="10dp"
+            android:src="@drawable/avatar" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <TextView
+            android:fontFamily="@font/j"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Your are logged in as"
+            android:textSize="17dp" />
+
+        <TextView
+            android:fontFamily="@font/lobster"
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Username"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:fontFamily="@font/lobster"
+
+            android:id="@+id/agentid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Agentid"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:fontFamily="@font/lobster"
+
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:fontFamily="@font/j"
+
+            android:id="@+id/add_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_background"
+            android:text="post"
+            android:textColor="@color/colorWhite1"
+            android:textStyle="bold" />
+        <Button
+            android:fontFamily="@font/j"
+
+            android:id="@+id/add_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_background"
+            android:text="header"
+            android:textColor="@color/colorWhite1"
+            android:textStyle="bold" />
+        <Button
+            android:fontFamily="@font/j"
+            android:id="@+id/developasset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_background"
+            android:text="Develop"
+            android:textColor="@color/colorWhite1"
+            android:textStyle="bold" />
+
+        <Button
+            android:fontFamily="@font/j"
+
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_background"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textColor="@color/colorWhite1"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

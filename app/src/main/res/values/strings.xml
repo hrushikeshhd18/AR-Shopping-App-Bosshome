@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Boss Home</string>
+    <string name="local">INR</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="checkout">Check Out</string>
+    <string name="total_price">Total Price</string>
+    <string name="minimum_order_amount">Minimum Order Amount</string>
+    <string name="cart">Cart</string>
+    <!-- API key-->
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">94bnVY9xdprPap6cY56ImCbXJcOhxBzMebollRIA</string>
+    <string name="back4app_client_key">VSuHxVSYheCBPXuKwXCVNT0wH0rDnJhAxexiQr61</string>
+    <string name="title_activity_maps">BossHome Map</string>
+</resources>

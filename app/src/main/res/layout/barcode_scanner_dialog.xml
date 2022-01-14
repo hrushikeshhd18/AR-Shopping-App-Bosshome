@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <SurfaceView
+        android:id="@+id/cameraPreview"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="290dp"
+        android:layout_height="370dp"  />
+
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:text="Scanning for Barcode Code.."
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_below="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/itemLayout"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/rounded_corners_background"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/textData"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/searchItemImage"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/searchItemImage"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/searchItemName"
+                android:text="name"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/searchItemDescription"
+                android:layout_below="@+id/searchItemName"
+                android:text="description"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

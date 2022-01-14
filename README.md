@@ -5,7 +5,7 @@ Back4app
 Firebase
 Unity 
 Android Studios
-The App was made for Furniture Designers and Users who Shooping using AR
+The App was made for Furniture Designers and Users who do Shooping using AR
 
 
 
